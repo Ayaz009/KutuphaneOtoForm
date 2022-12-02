@@ -16,5 +16,20 @@ namespace KutuphaneOto
         {
             InitializeComponent();
         }
+
+        private void btnGiris_Click(object sender, EventArgs e)
+        {
+            string ad = txtAd.Text;
+            string sifre = txtSifre.Text;
+
+            if (ad.Equals("admin") && sifre.Equals("123"))
+            {
+                MessageBox.Show(text:"giriş başarılı");
+            }
+            else
+            {
+                MessageBox.Show("kullanıcı adı veya şifre hatalıdır!Tekrar deneyiniz.");
+            }
+        }
     }
 }
